@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: startF;
+  src: url(/fonts/891bac4bf2cf726a4a3c.ttf);
+}
+
+@font-face {
+  font-family: starS;
+  src: url(/fonts/9072643e9f07efac73cc.ttf);
+}
+
+@font-face {
+  font-family: starT;
+  src: url(/fonts/a04d3c474ae54100589f.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
