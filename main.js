@@ -36,6 +36,16 @@ function locomotive() {
 }
 locomotive();
 
+
+gsap.to(".loader", {
+  opacity:0,
+  duration:5,
+})
+
+gsap.to(".loader", {
+  display:"none"
+})
+
 function landingpage() {
   let next = document.getElementById('next');
   let prev = document.getElementById('prev');
