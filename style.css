@@ -154,9 +154,12 @@ header nav ul {
 }
 
 .carousel .list .item .main-content .content .price {
-  font-family: 'Aboreto';
+  font-family: Poppins;
   font-size: 3em;
   margin: 20px 0;
+  font-weight: 700;
+  -webkit-text-stroke: 1px white;
+  
 }
 
 .carousel .list .item .main-content .content .addToCard {
@@ -166,7 +169,7 @@ header nav ul {
   font-family: Poppins;
   font-size: large;
   font-weight: 500;
-  border-radius: 30px;
+  border-radius:5px;
   border: none;
   margin-top: 20px;
 }
