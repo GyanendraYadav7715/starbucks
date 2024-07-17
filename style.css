@@ -8,6 +8,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  user-select: none;
 }
 
 body {
@@ -159,7 +160,7 @@ header nav ul {
   margin: 20px 0;
   font-weight: 700;
   -webkit-text-stroke: 1px white;
-  
+
 }
 
 .carousel .list .item .main-content .content .addToCard {
@@ -169,7 +170,7 @@ header nav ul {
   font-family: Poppins;
   font-size: large;
   font-weight: 500;
-  border-radius:5px;
+  border-radius: 5px;
   border: none;
   margin-top: 20px;
 }
@@ -342,4 +343,29 @@ header nav ul {
     left: 50%;
     justify-content: center;
   }
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #000;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+
+.underline:hover::after {
+  width:100%;
+  left: 0;
+  background: #000;
 }

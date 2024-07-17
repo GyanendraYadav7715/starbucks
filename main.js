@@ -103,3 +103,24 @@ function landingpage() {
   }, 5000);
 }
 landingpage();
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll('footer a');
+    links.forEach(link => {
+    link.classList.add('underline');
+
+  const tl = gsap.timeline({paused: true });
+
+  tl.to(link, {
+    // color: "#1d4ed8", // Change text color
+  scale: 1.02,      // Scale the text
+  duration: 0.3,
+  ease: "power2.inOut"
+      });
+
+      link.addEventListener('mouseenter', () => tl.play());
+      link.addEventListener('mouseleave', () => tl.reverse());
+    });
+  });
+ 
