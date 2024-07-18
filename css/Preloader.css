@@ -2,9 +2,7 @@
     display: inline-block;
     text-transform: lowercase;
     font-weight: 900;
-    /* background: -webkit-linear-gradient(bottom, #422f1c, #e3e3e3, #29da76);
-  background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  
 }
 
 .starbuck span:nth-child(3) {

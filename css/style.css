@@ -13,30 +13,27 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  /* user-select: none; */
+  
 }
-
-body {
-  font-family: Poppins;
-  margin: 0;
-  font-size: 16px;
-}
-
-
-
 :root {
   --border-color: #fff5;
   --w-image: 500px;
   --calculate: calc(3 / 2);
 }
-
+body {
+  font-family: Poppins;
+  margin: 0;
+  
+}
 header {
   display: grid;
   grid-template-columns: 80px 1fr calc(var(--w-image) * var(--calculate));
   grid-template-rows: 80px;
   position: relative;
   z-index: 10;
-  border-bottom: 1px solid var(--border-color);
+ 
+  background-color: #ffffff20;
+  backdrop-filter: blur(2px);
 }
 
 header .logo img {
@@ -83,8 +80,7 @@ header nav ul {
   content: "";
   top: 0;
   left: calc(100% - calc(var(--w-image) * var(--calculate)));
-  border-left: 1px solid var(--border-color);
-  /* border-right: 1px solid var(--border-color); */
+ 
   z-index: 10;
   pointer-events: none;
 }
@@ -156,7 +152,7 @@ header nav ul {
   font-family: Poppins;
   font-weight: 900;
   text-transform: uppercase;
-
+  line-height: .9em;
   -webkit-text-stroke: 2px white;
 }
 
@@ -169,15 +165,25 @@ header nav ul {
 }
 
 .carousel .list .item .main-content .content .addToCard {
-  background-color: #4f8b69;
-  color: #fff;
-  padding: 10px 30px;
-  font-family: Poppins;
-  font-size: large;
-  font-weight: 500;
-  border-radius: 5px;
-  border: none;
-  margin-top: 20px;
+    
+    color: rgb(11, 10, 10);
+    margin-top: 2vw;
+    font-family: "Kajiro";
+    font-size: 4vw;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: .9;
+    padding: .8vw 3vw;
+    cursor: pointer;
+    pointer-events: all;
+  background-color: transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 40px #5555;
+}
+.carousel .list .item .main-content .content .addToCard:hover{
+  background-color: #eee5;
 }
 
 .arrows {
@@ -195,7 +201,7 @@ header nav ul {
 .arrows button {
   background-color: transparent;
   border: 1px solid var(--border-color);
-  color: #fff;
+  color: #0d0c0c;
   font-family: monospace;
   font-size: large;
   font-weight: bold;
