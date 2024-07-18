@@ -173,6 +173,18 @@ function landingpage() {
   let autoPlay = setInterval(() => {
     next.click();
   }, 5000);
+
+
+  document.querySelectorAll('.nav-item').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      gsap.to(item, { scale: 1, duration: 0.3, color:"#40966c" });
+    });
+
+    item.addEventListener('mouseleave', () => {
+      gsap.to(item, { scale: 1, duration: 0.3 ,color:"black" });
+    });
+  });
+
 }
 landingpage();
 
