@@ -16,6 +16,40 @@
 
 }
 
+.starbuck span {
+  display: inline-block;
+  text-transform: lowercase;
+  font-weight: 900;
+  /* background: -webkit-linear-gradient(bottom, #422f1c, #e3e3e3, #29da76);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.starbuck span:nth-child(3) {
+  color: #49ab73;
+}
+
+.starbuck span:nth-child(4) {
+  color: #49ab73;
+}
+
+.starbuck span:nth-child(5) {
+  color: #49ab73;
+}
+
+.starbuck span:nth-child(6) {
+  color: #49ab73;
+}
+
+.starbuck span:nth-child(7) {
+  color: #49ab73;
+}
+
+.starbuck span:nth-child(1) {
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
 :root {
   --border-color: #fff5;
   --w-image: 500px;
@@ -366,51 +400,27 @@ header nav ul {
   }
 }
 
-#nav-part2 h6 {
-  padding: 8px 22px;
-  border: 1px solid rgba(0, 0, 0, 0.37);
-  border-radius: 20px;
-
+.underline {
+  display: inline-block;
   position: relative;
-  overflow: hidden;
-  transition: color 0.3s;
+  cursor: pointer;
 }
 
-#nav-part2 h6 a {
-  font-weight: 500;
-  font-size: 1.3rem;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.776);
-  position: relative;
-  z-index: 1;
-
-  transition: color 0.3s;
-}
-
-
-
-#nav-part2 h6:hover a {
-  color: #40966c;
-}
-
-
-
-#nav-part2 h6::after {
+.underline::after {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  transform: scaleY(0);
-  transform-origin: bottom;
-  transition: transform 0.3s ease;
-  border-radius: 10%;
+  width: 0;
+  height: 1px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #000;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
 }
 
-#nav-part2 h6:hover::after {
-  transform: scaleY(1);
-  border-radius: 0;
+.underline:hover::after {
+  width: 100%;
+  left: 0;
+  background: #000;
 }

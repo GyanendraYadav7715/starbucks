@@ -1,7 +1,5 @@
-import "./css/style.css";
-import "./css/Normalize.css";
-import "./css/footer.css";
-import "./css/Preloader.css";
+import "./style.css";
+import "./Normalize.css";
 import { gsap } from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -118,6 +116,8 @@ function locomotive() {
 }
 locomotive();
 
+
+
 function landingpage() {
   let next = document.getElementById('next');
   let prev = document.getElementById('prev');
@@ -188,29 +188,23 @@ function landingpage() {
 }
 landingpage();
 
-function footeranimtion() {
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll('footer a');
-    links.forEach(link => {
-      link.classList.add('underline');
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll('footer a');
+  links.forEach(link => {
+    link.classList.add('underline');
 
-      const tl = gsap.timeline({ paused: true });
+    const tl = gsap.timeline({ paused: true });
 
-      tl.to(link, {
-        color: "#00b1a4",
-        scale: 1.02,
-        duration: 0.3,
-        ease: "power2.inOut"
-      });
-
-      link.addEventListener('mouseenter', () => tl.play());
-      link.addEventListener('mouseleave', () => tl.reverse());
+    tl.to(link, {
+      // color: "#1d4ed8", // Change text color
+      scale: 1.02,      // Scale the text
+      duration: 0.3,
+      ease: "power2.inOut"
     });
+
+    link.addEventListener('mouseenter', () => tl.play());
+    link.addEventListener('mouseleave', () => tl.reverse());
   });
-
-
-
-}
-footeranimtion();
+});
 
