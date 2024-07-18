@@ -2,6 +2,86 @@ import "./style.css";
 import "./Normalize.css";
 import { gsap } from "gsap";
 gsap.registerPlugin(ScrollTrigger);
+
+function loderanimtion() {
+  let Prelodertime = gsap.timeline();
+
+  Prelodertime.to(".preloder", {
+    duration: .4,
+    backgroundColor: "#40966c",
+
+  })
+  function braketheText() {
+    let tata = document.querySelector(".starbuck");
+    let tatah1 = tata.textContent;
+    let splitedtext = tatah1.split("");
+    let halfvalue = splitedtext.length / 2;
+    let clutter = "";
+
+    splitedtext.forEach(function (e, idx) {
+      if (idx < halfvalue) {
+        clutter += `<span class="a">${e}</span>`;
+      } else {
+        clutter += `<span class="b">${e}</span>`;
+      }
+    });
+
+    console.log(clutter);
+    tata.innerHTML = clutter;
+  }
+  braketheText();
+  Prelodertime.from(".starbuck .a", {
+    opacity: 0,
+    y: 150,
+    duration: 0.5,
+    stagger: 0.15,
+
+  });
+  Prelodertime.from(".starbuck .b", {
+    opacity: 0,
+    y: 150,
+    duration: 0.5,
+    stagger: 0.15,
+
+  });
+
+  gsap.from(".preloder img", {
+    opacity: 0,
+    duration: .8,
+  })
+  Prelodertime.to(".starbuck .a", {
+    opacity: 0,
+    y: -150,
+    duration: 0.4,
+    stagger: 0.10,
+
+  });
+  Prelodertime.to(".starbuck .b", {
+    opacity: 0,
+    y: -150,
+    duration: 0.4,
+    stagger: 0.10,
+
+  });
+  Prelodertime.to(".preloder .goingtoright", {
+    opacity: 0,
+    duration: .7,
+    x: 1000
+  }, 'go')
+  Prelodertime.to(".preloder .goingtoleft", {
+    opacity: 0,
+    duration: .7,
+    x: -1000
+  }, 'go')
+  Prelodertime.to(".preloder", {
+    duration: .2,
+    opacity: 0,
+    display: "none"
+  })
+
+}
+loderanimtion();
+
 function locomotive() {
 
   const locoScroll = new LocomotiveScroll({
@@ -32,19 +112,11 @@ function locomotive() {
 
   ScrollTrigger.refresh();
 
-  
+
 }
 locomotive();
 
 
-gsap.to(".loader", {
-  opacity:0,
-  duration:5,
-})
-
-gsap.to(".loader", {
-  display:"none"
-})
 
 function landingpage() {
   let next = document.getElementById('next');
@@ -105,22 +177,22 @@ function landingpage() {
 landingpage();
 
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const links = document.querySelectorAll('footer a');
-    links.forEach(link => {
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll('footer a');
+  links.forEach(link => {
     link.classList.add('underline');
 
-  const tl = gsap.timeline({paused: true });
+    const tl = gsap.timeline({ paused: true });
 
-  tl.to(link, {
-    // color: "#1d4ed8", // Change text color
-  scale: 1.02,      // Scale the text
-  duration: 0.3,
-  ease: "power2.inOut"
-      });
-
-      link.addEventListener('mouseenter', () => tl.play());
-      link.addEventListener('mouseleave', () => tl.reverse());
+    tl.to(link, {
+      // color: "#1d4ed8", // Change text color
+      scale: 1.02,      // Scale the text
+      duration: 0.3,
+      ease: "power2.inOut"
     });
+
+    link.addEventListener('mouseenter', () => tl.play());
+    link.addEventListener('mouseleave', () => tl.reverse());
   });
- 
+});
+

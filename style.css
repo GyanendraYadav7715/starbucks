@@ -2,20 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: ro;
+  src: url("/fonts/Rejouice-Headline.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
-  user-select: none;
+  /* user-select: none; */
 }
 
 body {
   font-family: Poppins;
   margin: 0;
   font-size: 16px;
+}
 
+.starbuck span {
+  display: inline-block;
+  text-transform: lowercase;
+  font-weight: 900;
+  /* background: -webkit-linear-gradient(bottom, #422f1c, #e3e3e3, #29da76);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.starbuck span:nth-child(3) {
+  color: #49ab73;
+}
+
+.starbuck span:nth-child(4) {
+  color: #49ab73;
+}
+
+.starbuck span:nth-child(5) {
+  color: #49ab73;
+}
+
+.starbuck span:nth-child(6) {
+  color: #49ab73;
+}
+
+.starbuck span:nth-child(7) {
+  color: #49ab73;
+}
+
+.starbuck span:nth-child(1) {
+  margin-top: 5px;
+  text-transform: capitalize;
 }
 
 :root {
@@ -74,7 +112,7 @@ header nav ul {
   position: absolute;
   width: var(--w-image);
   height: 100%;
-  content: '';
+  content: "";
   top: 0;
   left: calc(100% - calc(var(--w-image) * var(--calculate)));
   border-left: 1px solid var(--border-color);
@@ -87,7 +125,7 @@ header nav ul {
   position: absolute;
   top: 50px;
   left: 50px;
-  content: '';
+  content: "";
   background-color: red;
   width: 400px;
   height: 300px;
@@ -95,7 +133,7 @@ header nav ul {
   pointer-events: none;
   border-radius: 20px 50px 110px 230px;
   filter: blur(150px);
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .carousel .list .item {
@@ -160,7 +198,6 @@ header nav ul {
   margin: 20px 0;
   font-weight: 700;
   -webkit-text-stroke: 1px white;
-
 }
 
 .carousel .list .item .main-content .content .addToCard {
@@ -244,7 +281,7 @@ header nav ul {
 
 .next .item .image img,
 .next .item .image figcaption {
-  animation: effectNext .5s ease-in-out 1 forwards;
+  animation: effectNext 0.5s ease-in-out 1 forwards;
 }
 
 @keyframes effectNext {
@@ -352,7 +389,7 @@ header nav ul {
 }
 
 .underline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 1px;
@@ -365,7 +402,7 @@ header nav ul {
 }
 
 .underline:hover::after {
-  width:100%;
+  width: 100%;
   left: 0;
   background: #000;
 }
