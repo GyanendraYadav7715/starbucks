@@ -1,0 +1,86 @@
+.Container {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    /* background-color: aqua; */
+    padding: 10px 0px 30px 0px;
+    justify-content: space-evenly;
+    justify-content: space-evenly;
+}
+
+
+.box {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+
+    /* border: 1px solid crimson; */
+}
+
+
+.box img {
+
+    object-fit: cover;
+    display: block;
+    height: 100%;
+
+}
+
+
+.seasonal-heading {
+    margin-top: 0;
+    font-size: 3.5em;
+    font-family: Poppins;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px white;
+}
+
+.catelogue-section {
+    padding-top: 3vw;
+    background-color: #d3eae2;
+}
+.inner-menu {
+    width: 300px;
+    height: 0;
+    position: absolute;
+    top: 51%;
+    left: 17%;
+    background-color: rgb(237, 243, 255);
+    border-radius: 0px 0px 25px 25px;
+    transition: height 0.5s ease, opacity 0.5s ease;
+    overflow: hidden;
+}
+
+.menu-item:hover+.inner-menu {
+    height: 250px;
+}
+
+
+.menu-item {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: rgb(237, 243, 255);
+    padding: 0 32px;
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 13px;
+
+}
+
+.menu-item a {
+    margin: 5px 0;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
