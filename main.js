@@ -1,16 +1,12 @@
 import "./style.css";
 import "./Normalize.css";
+
 import { gsap } from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 function loderanimtion() {
   let Prelodertime = gsap.timeline();
-
-  Prelodertime.to(".preloder", {
-    duration: .4,
-    backgroundColor: "#40966c",
-
-  })
+ 
   function braketheText() {
     let tata = document.querySelector(".starbuck");
     let tatah1 = tata.textContent;
@@ -177,11 +173,11 @@ function landingpage() {
 
   document.querySelectorAll('.nav-item').forEach(item => {
     item.addEventListener('mouseenter', () => {
-      gsap.to(item, { scale: 1, duration: 0.3, color:"#40966c" });
+      gsap.to(item, { scale: 1, duration: 0.3, color: "#40966c" });
     });
 
     item.addEventListener('mouseleave', () => {
-      gsap.to(item, { scale: 1, duration: 0.3 ,color:"black" });
+      gsap.to(item, { scale: 1, duration: 0.3, color: "black" });
     });
   });
 
@@ -197,8 +193,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const tl = gsap.timeline({ paused: true });
 
     tl.to(link, {
-      // color: "#1d4ed8", // Change text color
-      scale: 1.02,      // Scale the text
+      color: "#40966c",
+      scale: 1.02,
       duration: 0.3,
       ease: "power2.inOut"
     });
