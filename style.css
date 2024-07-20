@@ -6,11 +6,13 @@
   font-family: ro;
   src: url("/fonts/Rejouice-Headline.ttf");
 }
+
 :root {
   --border-color: #fff5;
   --w-image: 500px;
   --calculate: calc(3 / 2);
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,9 +20,12 @@
   text-decoration: none;
   list-style: none;
 }
+
 body {
   font-family: Poppins;
+  background-color: #f7f7f7;
 }
+
 .preloder {
   background: rgb(67, 45, 43);
   background: linear-gradient(90deg, rgba(67, 45, 43, 1) 0%, rgba(101, 67, 53, 1) 37%, rgba(0, 0, 0, 1) 100%);
@@ -35,6 +40,7 @@ body {
   margin-top: 5px;
   text-transform: capitalize;
 }
+
 header {
   display: grid;
   grid-template-columns: 80px 1fr calc(var(--w-image) * var(--calculate));
@@ -75,6 +81,7 @@ header nav ul {
   gap: 30px;
   padding-right: 30px;
 }
+
 #nav-part2 h6 {
   padding: 8px 22px;
   border: 1px solid rgba(0, 0, 0, 0.37);
@@ -123,6 +130,7 @@ header nav ul {
   transform: scaleY(1);
   border-radius: 0;
 }
+
 .carousel {
   margin-top: -80px;
   width: 100%;
@@ -419,6 +427,114 @@ header nav ul {
   }
 }
 
+.gift {
+  background-image: url(/137-93130.jpg);
+  background-size: cover;
+}
+
+.gift h2 {
+  position: relative;
+  font-family: ro;
+
+}
+
+.gift p {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.gift .join {
+  color: white;
+  margin-top: 2vw;
+  font-family: "Kajiro";
+  font-size: 3vw;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: .9;
+  padding: .8vw 3vw;
+  cursor: pointer;
+  pointer-events: all;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 40px #5555;
+}
+.gift .join:hover{
+  background-color: #eee5;
+}
+.Pairings .join {
+  color: white;
+  margin-top: 2vw;
+  font-family: "Kajiro";
+  font-size: 3vw;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: .9;
+  padding: .8vw 3vw;
+  cursor: pointer;
+  pointer-events: all;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 40px #5555;
+}
+
+.Pairings .join:hover {
+  background-color: #eee5;
+}
+.Pairings h2{
+  letter-spacing: 1.5px;
+}
+.Pairings p {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.Frappuccino{
+  filter: drop-shadow(15px 15px 15px rgba(6, 6, 6, 0.722));
+}
+
+.send {
+  background-image: url(/image_processing20201201-32593-1t8f1dl.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.send h2 {
+  
+  position: relative;
+  font-family: ro;
+
+}
+
+.send p {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.send .join {
+   
+  margin-top: 2vw;
+  font-family: "Kajiro";
+  font-size: 3vw;
+  font-weight: 100;
+  letter-spacing: 2px;
+  line-height: .9;
+  padding: .8vw 3vw;
+  cursor: pointer;
+  pointer-events: all;
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  border-radius: 3px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 40px #5555;
+}
+
+.send .join:hover {
+  background-color: #eee5;
+}
 .underline {
   display: inline-block;
   position: relative;
@@ -443,5 +559,3 @@ header nav ul {
   left: 0;
   background: #40966c;
 }
-
- 
