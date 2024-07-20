@@ -182,39 +182,39 @@ function landingpage() {
   });
 
 
-  Prelodertime.from(".afterpreloader .logo", {
-    y:30,
-    opacity: 0,
-    duration:.3,
-  })
-  Prelodertime.from(".afterpreloader li", {
-    y: 30,
-    opacity: 0,
-    duration: .7,
-    stagger:0.2
-  })
-  Prelodertime.from(".afterpreloader #nav-part2 h6", {
-    y: 30,
-    opacity: 0,
-    duration: .4,
-    stagger: 0.2
-  })
+  // Prelodertime.from(".afterpreloader .logo", {
+  //   y: 30,
+  //   opacity: 0,
+  //   duration: .3,
+  // })
+  // Prelodertime.from(".afterpreloader li", {
+  //   y: 30,
+  //   opacity: 0,
+  //   duration: .7,
+  //   stagger: 0.2
+  // })
+  // Prelodertime.from(".afterpreloader #nav-part2 h6", {
+  //   y: 30,
+  //   opacity: 0,
+  //   duration: .4,
+  //   stagger: 0.2
+  // })
   Prelodertime.from(".afterpreloader .content h2", {
-     
+
     opacity: 0,
-    duration:2,
-    
+    duration: 2,
+
   })
   Prelodertime.from(".afterpreloader .content p", {
-    x:-50,
+    x: -50,
     opacity: 0,
     duration: 1,
 
   })
   Prelodertime.from(".afterpreloader article figure", {
-    
+
     opacity: 0,
-    duration:.7,
+    duration: .7,
 
   })
   Prelodertime.from(".afterpreloader .content button", {
@@ -227,45 +227,33 @@ function landingpage() {
 landingpage();
 
 function giftanimation() {
-  let gift = gsap.timeline();
+  let gift = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".ride",
+      scroller: ".app",
+      // markers: true,
+      start: "top 60%",
+      end: "bottom 90%",
+      scrub: true
+    },
+  });
   gift.from(".gift h2", {
     scale: 0,
     opacity: 0,
     duration: 1,
-    scrollTrigger: {
-      trigger: ".gift",
-      scroller: ".app",
-      // markers: true,
-      start: "bottom 100%",
-      end: "bottom 90%",
-      scrub: true
-    },
+
   });
   gift.from(".gift p", {
     y: 20,
     opacity: 0,
     duration: 1,
-    scrollTrigger: {
-      trigger: ".gift",
-      scroller: ".app",
-      // markers: true,
-      start: "bottom 100%",
-      end: "bottom 90%",
-      scrub: true
-    },
+
   });
   gift.from(".gift .join", {
 
     opacity: 0,
     duration: 1,
-    scrollTrigger: {
-      trigger: ".gift",
-      scroller: ".app",
-      // markers: true,
-      start: "bottom 100%",
-      end: "bottom 90%",
-      scrub: true
-    },
+
   });
 }
 giftanimation();
@@ -314,24 +302,137 @@ function seasonanimatio() {
 
     },
   })
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const colors = ["green", "pink", "blue", "orange"]; // Define the colors
+    const letters = document.querySelectorAll('.seasonal-heading span');
+    let colorIndex = 0;
+
+    function animateLetters() {
+      gsap.to(letters, {
+        color: colors[colorIndex],
+        stagger: 0.1,
+        duration: 0.5,
+        onComplete: () => {
+          colorIndex = (colorIndex + 1) % colors.length;
+          animateLetters();
+        }
+      });
+    }
+
+    animateLetters();
+  });
 }
 seasonanimatio();
 
-document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("footer a");
-  links.forEach((link) => {
-    link.classList.add("underline");
-
-    const tl = gsap.timeline({ paused: true });
-
-    tl.to(link, {
-      color: "#40966c",
-      scale: 1.02,
-      duration: 0.3,
-      ease: "power2.inOut",
-    });
-
-    link.addEventListener("mouseenter", () => tl.play());
-    link.addEventListener("mouseleave", () => tl.reverse());
+function Pairingsanimation() {
+  let Pairings = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".glow",
+      scroller: ".app ",
+      start: "top 55%",
+      end: "top 70%",
+      // markers: true,
+      scrub: 7,
+    },
   });
-});
+  Pairings.from(".Pairings h2", {
+    opacity: 0,
+    y: 30,
+    duration: .6,
+  })
+  Pairings.from(".Pairings p", {
+    opacity: 0,
+    y: 30,
+    duration: .6,
+  })
+  Pairings.from(".Pairings button", {
+    opacity: 0,
+    y: 30,
+    duration: .6,
+  })
+  Pairings.from(".Pairings img", {
+    opacity: 0,
+    y: 30,
+    duration: .6,
+  })
+
+}
+Pairingsanimation();
+function  Rewardanimation() {
+  let reward = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".reward",
+      scroller: ".app ",
+      start: "top 55%",
+      end: "top 70%",
+      // markers: true,
+      scrub: 7,
+    },
+  });
+  reward.from(".reward h2", {
+    opacity: 0,
+    y: 30,
+    duration: .6,
+  })
+  reward.from(".reward p", {
+    opacity: 0,
+    x:-30,
+    duration: .6,
+  })
+  reward.from(".reward button", {
+    opacity: 0,
+    y: 30,
+    duration: .6,
+  })
+  
+
+}
+Rewardanimation();
+
+function textrunninganimation() {
+  let clutter = "";
+  document.querySelector(".textrun").textContent.split(" ").forEach(function (dets) {
+    clutter += `<span>${dets}</span> `;
+  });
+  document.querySelector(".textrun").innerHTML = clutter;
+
+  gsap.to(".textrun span", {
+    scrollTrigger: {
+      trigger: `.textrun span `,
+      start: `top bottom`,
+      end: `bottom top`,
+      //markers: true,
+      scroller: `.app`,
+      scrub: .5,
+    },
+    stagger: .2,
+    color: `#40966c`
+  })
+
+}
+textrunninganimation();
+
+
+function footeraniamtion() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const links = document.querySelectorAll("footer a");
+    links.forEach((link) => {
+      link.classList.add("underline");
+
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to(link, {
+        color: "#40966c",
+        scale: 1.02,
+        duration: 0.3,
+        ease: "power2.inOut",
+      });
+
+      link.addEventListener("mouseenter", () => tl.play());
+      link.addEventListener("mouseleave", () => tl.reverse());
+    });
+  });
+
+}
+footeraniamtion();
