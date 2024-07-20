@@ -6,6 +6,10 @@ import "./CatelogueM.css"
 
 gsap.registerPlugin(ScrollTrigger);
 let Prelodertime = gsap.timeline();
+
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault()
+},false)
 function cursor() {
   document.addEventListener("mousemove", function (det) {
     gsap.to(".cursor", {
