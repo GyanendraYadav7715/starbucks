@@ -6,6 +6,10 @@
   font-family: ro;
   src: url("/fonts/Rejouice-Headline.ttf");
 }
+@font-face {
+  font-family:Kajiro;
+  src: url(/fonts/Kajiro\ Bold.ttf);
+}
 
 :root {
   --border-color: #fff5;
@@ -19,6 +23,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  user-select: none;
 }
 
 body {
