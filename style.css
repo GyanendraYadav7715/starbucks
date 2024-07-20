@@ -25,7 +25,15 @@ body {
   font-family: Poppins;
   background-color: #f7f7f7;
 }
-
+/* Custom cursor */
+.cursor {
+  position: fixed;
+  z-index: 99;
+  border-radius: 50%;
+  background-color: #9bca1b;
+  width: 2.5rem;
+  height: 2.5rem;
+}
 .preloder {
   background: rgb(67, 45, 43);
   background: linear-gradient(90deg, rgba(67, 45, 43, 1) 0%, rgba(101, 67, 53, 1) 37%, rgba(0, 0, 0, 1) 100%);

@@ -6,6 +6,19 @@ import "./CatelogueM.css"
 
 gsap.registerPlugin(ScrollTrigger);
 let Prelodertime = gsap.timeline();
+function cursor() {
+  document.addEventListener("mousemove", function (det) {
+    gsap.to(".cursor", {
+      x: det.x ,
+      y: det.y ,
+      duration: 0.5
+    });
+    
+  });
+
+}
+cursor();
+
 function loderanimtion() {
 
 
@@ -304,7 +317,7 @@ function seasonanimatio() {
   })
 
   document.addEventListener("DOMContentLoaded", function () {
-    const colors = ["green", "pink", "blue", "orange"]; // Define the colors
+    const colors = ["red", "orange" ,"yellow","green", "blue","indigo","violet"];  
     const letters = document.querySelectorAll('.seasonal-heading span');
     let colorIndex = 0;
 
