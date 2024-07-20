@@ -30,9 +30,13 @@ body {
   position: fixed;
   z-index: 99;
   border-radius: 50%;
-  background-color: #9bca1b;
-  width: 2.5rem;
-  height: 2.5rem;
+  background-color:rgba(53, 45, 45, 0.389);
+    backdrop-filter: blur(2px);
+     
+    border: 1px solid var(--border-color);
+    box-shadow: 0 10px 40px #5555;
+  width: 3rem;
+  height: 3rem;
 }
 .preloder {
   background: rgb(67, 45, 43);
