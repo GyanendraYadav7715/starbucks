@@ -29,10 +29,7 @@
     background-color: #f0f0f0;
 }
 
-.content {
-    text-align: center;
-   
-}
+
 
 .content-para {
     font-size: 16px;
@@ -40,12 +37,15 @@
     margin: 10px;
 }
 
+.content1 {
+    text-align: center;
+}
 .content-heading {
     font-size: 30px;
     font-weight: 600;
 }
 
-.content img {
+.content1 img {
     max-width: 100%;
     height: auto;
     margin: auto;
