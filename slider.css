@@ -1,11 +1,16 @@
 .slider {
     display: flex;
     justify-content: center;
-    margin: 30px;
+    margin: 20px;
 }
 
 .slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 0 10px;
+    gap: 5px;
     padding: 10px 20px;
     border: 1px solid #ccc;
     cursor: pointer;
@@ -17,6 +22,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 20px;
 }
 
 .slider-item:hover {
@@ -25,16 +31,17 @@
 
 .content {
     text-align: center;
-    margin-top: 20px;
+   
 }
 
 .content-para {
     font-size: 16px;
     font-weight: 500;
+    margin: 10px;
 }
 
 .content-heading {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -47,4 +54,9 @@
     border-radius: 50%;
     border: none;
 
+}
+
+.item-category{
+    font-size: 30px;
+    /* align-items: center; */
 }

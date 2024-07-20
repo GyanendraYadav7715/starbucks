@@ -17,9 +17,10 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body oncontextmenu="return false">
+<body>
   <div class="cursor"></div>
   <div class="app">
    
@@ -258,13 +259,13 @@
       </div>
     </section>
     <div class="slider">
-      <div class="slider-item" onclick="showContent('drink')">Drinks</div>
-      <div class="slider-item" onclick="showContent('food')">Food</div>
-      <div class="slider-item" onclick="showContent('merchandise')">Merchandise</div>
+      <div class="slider-item" onclick="showContent('drink')"><i class="fa-solid fa-martini-glass-citrus item-category"></i> <h3>Drinks</h3></div>
+      <div class="slider-item" onclick="showContent('food')"><i class="fa-solid fa-stroopwafel item-category"></i> <h3>Food</h3></div>
+      <div class="slider-item" onclick="showContent('merchandise')"> <i class="fa-solid fa-box item-category"></i>  <h3>Merchandise</h3></div>
     </div>
     <div class="content" id="content">
       <h2 class="content-heading">Welcome</h2>
-      <p class="content-para">Click on an item to see more information.</p>
+      <p class="content-para">Click on Menu  to see more Items</p>
     </div>
     <section class="w-full h-screen flex  Pairings  justify-between items-center text-center p-4 bg-[#40966c]">
       <div class="text-white mb-8 w-1/2 glow">
@@ -441,6 +442,8 @@
   <script type="module" src="/main.js"></script>
  <script src="Catelogue.js"></script>
  <script src="slider.js"></script>
+ <script  type="module" src="/motion.js"></script>
+ 
 </body>
 
 </html>
