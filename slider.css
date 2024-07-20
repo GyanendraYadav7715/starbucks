@@ -1,0 +1,51 @@
+
+.slider {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.slider-item {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.food-section{
+    display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+
+.slider-item:hover {
+    background-color: #f0f0f0;
+}
+
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content-para{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.content-heading{
+    font-size: 25px ;
+    font-weight: 600;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 30px;
+   filter:drop-shadow(5px 5px 15px grey) ; 
+border-radius: 50%;
+border: none;
+  
+}
