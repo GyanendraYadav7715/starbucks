@@ -81,14 +81,13 @@
 }
 
 .menu-container.hover .inner-menu {
-    height: 300px;
+    height: 295px;
     cursor: pointer;
 }
 
-.menu-item,
-.inner-menu {
+.menu-item  , .inner-menu{
     background-color: rgb(228, 235, 250);
-    width: 303px;
+    width: 320px;
 }
 
 .second {
@@ -106,12 +105,11 @@
     height: 0;
     position: absolute;
     top: 50%;
-    left: 16.8%;
+   left: 68px;
     border-radius: 0px 0px 25px 25px;
-    transition: height 0.3s ease, opacity 0.3s ease;
+    transition: height 0.3s cubic-bezier(.22, .57, .12, .96);
     overflow: hidden;
-    z-index: 0;
-    /* Ensure it is below menu-item */
+    will-change: height;
 }
 
 
@@ -120,18 +118,30 @@
     justify-content: center;
     align-items: center;
     padding: 50px 50px 0px 50px;
-    gap: 50px;
+
+  
 }
 
 
 .inner-menu-item img {
-    width: 200px;
+padding: 10px;
     height: 150px;
     object-fit: cover;
+    filter: drop-shadow(5px 5px 15px rgb(116, 115, 115));
 }
+
+.gola {
+    width: 8px;
+    height: 8px;
+    background: currentColor;
+    border-radius: 50%;
+}
+
 
 .title-section {
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    text-transform: uppercase;
+    text-align: center;
 }
