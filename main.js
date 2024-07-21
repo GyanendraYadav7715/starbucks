@@ -1,6 +1,7 @@
 import "./style.css";
 import "./Normalize.css";
 import "./CatelogueM.css"
+import "./can.css"
 
 
 
