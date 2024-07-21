@@ -1,6 +1,7 @@
 import "./style.css";
 import "./Normalize.css";
 import "./CatelogueM.css"
+import "./can.css"
 
 
 
@@ -9,15 +10,81 @@ let Prelodertime = gsap.timeline();
 function cursor() {
   document.addEventListener("mousemove", function (det) {
     gsap.to(".cursor", {
-      x: det.x ,
-      y: det.y ,
+      x: det.x,
+      y: det.y,
       duration: 0.5
     });
-    
   });
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const anchors = document.querySelectorAll("a");
+    anchors.forEach((anchor) => {
+      anchor.addEventListener("mouseenter", () => {
+        gsap.to(".cursor", {
+          scale: .7,
+          border: "1px solid white",
+          duration: 0.5
+        });
+      });
+
+      anchor.addEventListener("mouseleave", () => {
+        gsap.to(".cursor", {
+          scale: 1,
+          border: "1px solid var(--border - color)",
+          duration: 0.5
+        });
+      });
+    });
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelectorAll("button");
+    btn.forEach((bt) => {
+      bt.addEventListener("mouseenter", () => {
+
+        gsap.to(".cursor", {
+          width: "5rem",
+          height: "5rem",
+          border: "1px solid white",
+          duration: 0.5
+        });
+        document.querySelector(".cursor").innerHTML = "<span>Click</span>";
+      });
+
+      bt.addEventListener("mouseleave", () => {
+        document.querySelector(".cursor").innerHTML = "";
+        gsap.to(".cursor", {
+          width: "3rem",
+          height: "3rem",
+          scale: 1,
+          border: "1px solid var(--border - color)",
+          duration: 0.5
+        });
+      });
+    });
+  });
+  document.querySelector(".can").addEventListener("mouseenter", () => {
+    gsap.to(".cursor", {
+      width: "6rem",
+      height: "6rem",
+      border: "1px solid white",
+      duration: 0.5
+    });
+    document.querySelector(".cursor").innerHTML = "<span>hover</span>";
+  })
+  document.querySelector(".can").addEventListener("mouseleave", () => {
+    document.querySelector(".cursor").innerHTML = "";
+    gsap.to(".cursor", {
+      width: "3rem",
+      height: "3rem",
+      scale: 1,
+      border: "1px solid var(--border - color)",
+      duration: 0.5
+    });
+  })
 }
+
 cursor();
+
 
 function loderanimtion() {
 
@@ -317,7 +384,7 @@ function seasonanimatio() {
   })
 
   document.addEventListener("DOMContentLoaded", function () {
-    const colors = ["red", "orange" ,"yellow","green", "blue","indigo","violet"];  
+    const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
     const letters = document.querySelectorAll('.seasonal-heading span');
     let colorIndex = 0;
 
@@ -372,7 +439,7 @@ function Pairingsanimation() {
 
 }
 Pairingsanimation();
-function  Rewardanimation() {
+function Rewardanimation() {
   let reward = gsap.timeline({
     scrollTrigger: {
       trigger: ".reward",
@@ -390,7 +457,7 @@ function  Rewardanimation() {
   })
   reward.from(".reward p", {
     opacity: 0,
-    x:-30,
+    x: -30,
     duration: .6,
   })
   reward.from(".reward button", {
@@ -398,8 +465,42 @@ function  Rewardanimation() {
     y: 30,
     duration: .6,
   })
-  
 
+  gsap.to(".egift1", {
+     
+    y: 10,
+    x: 10,
+    scale:1.2,
+    duration: 1,
+    repeat: -1,
+    yoyo: true,
+  })
+  gsap.to(".egift2", {
+
+    y: -10,
+    x: 10,
+    
+    duration: 1,
+    repeat: -1,
+    yoyo: true,
+  })
+  gsap.to(".egift3", {
+
+    y: 10,
+    x: -10,
+    duration: 1,
+    repeat: -1,
+    yoyo: true,
+  })
+  gsap.to(".egift4", {
+
+    y: -10,
+    x: -10,
+    scale:1.2,
+    duration: 1,
+    repeat: -1,
+    yoyo: true,
+  })
 }
 Rewardanimation();
 

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="slider.css">
-   <link
+  <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet" />
@@ -20,10 +20,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body>
+<body oncontextmenu="return false">
   <div class="cursor"></div>
   <div class="app">
-   
+
     <section class="preloder fixed w-full h-screen   z-50 ">
       <div class="w-full h-screen flex items-center justify-center relative">
         <img src="/coffee_02-removebg-preview.png" alt="coffee" class="absolute goingtoright" />
@@ -35,7 +35,7 @@
         </h1>
       </div>
     </section>
-   
+
     <section class="w-full h-screen relative afterpreloader ">
       <header>
         <figure class="logo">
@@ -141,18 +141,19 @@
       </main>
     </section>
     <section class="w-full h-screen relative ">
-     <div class="gift w-full h-full rounded-md flex items-center justify-center">
-      <div class="text-white   rounded-lg flex items-center flex-col justify-center ride  ">
-        <h2 class="text-[7vw] font-bold mb-4 uppercase text-white">OUR TREAT TO YOU</h2>
-        <p class="mb-4 w-[50%] text-center text-xl text-[#40966c]">
-          Join Starbucks<sup>®</sup> Rewards and savor our gift to you: a free drink with qualifying purchase during your
-          first week. Valid for one-time use.*
-        </p>
-      <button class="join">join now</button>
+      <div class="gift w-full h-full rounded-md flex items-center justify-center">
+        <div class="text-white   rounded-lg flex items-center flex-col justify-center ride  ">
+          <h2 class="text-[7vw] font-bold mb-4 uppercase text-white">OUR TREAT TO YOU</h2>
+          <p class="mb-4 w-[50%] text-center text-xl text-[#40966c]">
+            Join Starbucks<sup>®</sup> Rewards and savor our gift to you: a free drink with qualifying purchase during
+            your
+            first week. Valid for one-time use.*
+          </p>
+          <button class="join">join now</button>
+        </div>
       </div>
-     </div>
     </section>
-    
+
     <section>
       <div class="catelogue-section">
         <h1 class="seasonal-heading">
@@ -164,8 +165,8 @@
           <span class="zero inline-block font-[ro] font-semibold">n</span>
           <span class="zero inline-block font-[ro] font-semibold">a</span>
           <span class="zero inline-block font-[ro] font-semibold">l</span>
-          
-          
+
+
           <span class="one inline-block font-[ro] font-semibold">R</span>
           <span class="one inline-block font-[ro] font-semibold">e</span>
           <span class="one inline-block font-[ro] font-semibold">f</span>
@@ -191,9 +192,9 @@
               <div class="inner-menu">
                 <!-- Inner menu content here -->
                 <div class="inner-menu-item">
-                  <img src="images/18-transformed.avif" alt="">
-                  <img src="images/16-transformed.avif" alt="">
-      
+                  <img src="images/1.png" alt="">
+                  <img src="images/2.png" alt="">
+
                 </div>
                 <div class="title-section">
                      <h4>
@@ -204,11 +205,11 @@
                   </h4>
                 
                 </div>
-      
+
               </div>
             </div>
           </div>
-      
+
           <div class="box">
             <img src="https://content-prod-live.cert.starbucks.com/binary/v2/asset/137-92996.jpg" alt="not found">
             <div class="menu-container">
@@ -221,9 +222,9 @@
               <div class="inner-menu second">
                 <!-- Inner menu content here -->
                 <div class="inner-menu-item">
-                  <img src="images/17-transformed.avif" alt="">
-                  <img src="images/9-transformed.avif" alt="">
-      
+                  <img src="images/1.png" alt="">
+                  <img src="images/2.png" alt="">
+
                 </div>
                 <div class="title-section">
                   <h4>
@@ -247,9 +248,9 @@
               </div>
               <div class="inner-menu third">
                 <div class="inner-menu-item">
-                  <img src="images/7-transformed.avif" alt="">
-                  <img src="images/GLASS_MUG-transformed.avif" alt="">
-      
+                  <img src="images/1.png" alt="">
+                  <img src="images/2.png" alt="">
+
                 </div>
                 <div class="title-section">
                   <h4>
@@ -265,47 +266,84 @@
         </div>
       </div>
     </section>
-    <div class="slider-container">
-<div class="slider">
-  <div class="slider-item" onclick="showContent('drink')">
-    <i class="fa-solid fa-martini-glass-citrus item-category"> </i>
-    <h3 class="item-category-title">Drinks</h3>
-  </div>
-  <div class="slider-item" onclick="showContent('food')">
-    <i class="fa-solid fa-stroopwafel item-category"></i>
-    <h3 class="item-category-title">Food</h3>
-  </div>
-  <div class="slider-item" onclick="showContent('merchandise')">
-    <i class="fa-solid fa-box item-category"></i>
-    <h3 class="item-category-title">Merchandise</h3>
-  </div>
-</div>
-<div class="content1" id="content"></div>
+    <div class="slider">
+      <div class="slider-item" onclick="showContent('drink')">
+        <i class="fa-solid fa-martini-glass-citrus item-category"></i>
+        <h3>Drinks</h3>
+      </div>
+      <div class="slider-item" onclick="showContent('food')">
+        <i class="fa-solid fa-stroopwafel item-category"></i>
+        <h3>Food</h3>
+      </div>
+      <div class="slider-item" onclick="showContent('merchandise')">
+        <i class="fa-solid fa-box item-category"></i>
+        <h3>Merchandise</h3>
+      </div>
     </div>
-   
-    <section class="w-full h-screen flex  Pairings  justify-between items-center text-center p-4 bg-[#40966c]">
+    <div class="content1" id="content"></div>
+
+    <section class="can">
+      <div class="header">
+        <div class="left">
+          <h1 class="uppercase">Starbucks</h1>
+
+        </div>
+        <div class="author">
+          <h3>Drink cool</h3>
+          <div>
+            <p>Bottled</p>
+            <p>Mocha Frappuccino</p>
+          </div>
+          <div>
+            <p>NET QUANTITY:
+            </p>
+            <p>300ml</p>
+          </div>
+          <img src="/code.png" alt="">
+        </div>
+      </div>
+      <div class="banner">
+        <div class="product">
+          <div class="soda" style="--url: url(/STARBUCKS mockup____bg.jpeg)">
+          </div>
+          <div class="soda" style="--url: url(/mochabg.jpeg)">
+          </div>
+        </div>
+
+
+        <div class="rock">
+          <img src="/rock1.png" alt="">
+          <img src="/rock2.png" alt="">
+          <img src="/rock3.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="w-full h-screen flex  Pairings  justify-between items-center text-center p-4">
       <div class="text-white mb-8 w-1/2 glow">
         <h2 class="text-[4vw] font-bold mb-4 uppercase text-white font-[ro]">Meet the Starbucks <br> Pairings Menu</h2>
         <p class="mt-4   ">Crave-worthy pairings including our new, best-ever iced coffee. Restrictions apply.</p>
-        <button
-          class="join">
-           learn more
+        <button class="join">
+          learn more
         </button>
       </div>
-     
+
       <div class="flex justify-center mt-8 space-x-4 w-1/2 relative">
-        <img src="/137-92707-removebg-preview.png" alt="Frappuccino"
-          class=" object-contain Frappuccino">
-          <img src="/Screenshot_2024-07-20_064448-removebg-preview.png" alt="" class="absolute left-[2%] top-[10%] h-40">
-          <img src="/Screenshot_2024-07-20_064557-removebg-preview.png" alt="" class="absolute right-[35%] top-[10%] h-32">
-         
+        <img src="/137-92707-removebg-preview.png" alt="Frappuccino" class=" object-contain Frappuccino">
+        <img src="/Screenshot_2024-07-20_064448-removebg-preview.png" alt="" class="absolute left-[2%] top-[10%] h-40">
+        <img src="/Screenshot_2024-07-20_064557-removebg-preview.png" alt=""
+          class="absolute right-[35%] top-[10%] h-32">
+
       </div>
     </section>
-    <section class="w-full h-screen ">
+    <section class="w-full h-screen relative ">
+      <img src="/gift.png" alt="gift" class=" absolute left-10 top-20   w-32 egift1">
+      <img src="/gift.png" alt="gift" class=" absolute left-40 bottom-24  w-32 egift2" >
+      <img src="/gift.png" alt="gift" class=" absolute right-10 top-20  w-32 egift3" >
+      <img src="/gift.png" alt="gift" class=" absolute right-40 bottom-24  w-32 egift4" >
       <div class="send w-full h-full rounded-md flex items-center justify-center">
-        <div class="text-[#40966c] reward  rounded-lg flex items-center flex-col justify-center  ">
+        <div class="text-white reward  rounded-lg flex items-center flex-col justify-center  ">
           <h2 class="text-[5vw] font-bold mb-4 uppercase ">Just because it’s summer
-         </h2>
+          </h2>
           <p class="mb-4 w-[50%] text-center text-xl text-white">
             Treat someone special to a moment of delight with a Starbucks eGift.
           </p>
@@ -316,8 +354,10 @@
     <section class="text-center flex items-center justify-center p-10 w-full">
       <div class="w-[70%] text-xl font-medium tracking-wider textrun">
         *Valid only for new Starbucks Rewards members for 7 days from sign up. Offer good at participating stores for a
-        handcrafted menu-sized beverage with eligible purchase ($8 max value). Taxes not included. Excludes alcohol, Starbucks
-        Card and Starbucks Card reloads. Limit one per member. Cannot be combined with other offers or discounts. Product
+        handcrafted menu-sized beverage with eligible purchase ($8 max value). Taxes not included. Excludes alcohol,
+        Starbucks
+        Card and Starbucks Card reloads. Limit one per member. Cannot be combined with other offers or discounts.
+        Product
         availability varies by store. Excludes delivery services. Sign up from 7/15/2024 - 8/15/2024 to be eligible.
       </div>
     </section>
@@ -438,7 +478,7 @@
         </div>
 
 
-        
+
 
       </footer>
     </section>
@@ -456,10 +496,10 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
   <script type="module" src="/main.js"></script>
- <script src="Catelogue.js"></script>
- <script src="slider.js"></script>
- <script  type="module" src="/motion.js"></script>
- 
+  <script src="Catelogue.js"></script>
+  <script src="slider.js"></script>
+  <script type="module" src="/motion.js"></script>
+
 </body>
 
 </html>
