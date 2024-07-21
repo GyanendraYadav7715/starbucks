@@ -491,6 +491,15 @@ header nav ul {
 .gift .join:hover{
   background-color: #eee5;
 }
+
+.Pairings {
+  background-color: #40966c;
+  background-image:
+    repeating-linear-gradient(to right, transparent 0 150px, #0001 150px 151px),
+    repeating-linear-gradient(to bottom, transparent 0 150px, #0001 150px 151px),
+    linear-gradient(to right, #40966c, #40966c),
+    url(/STARBUCKS\ mockup____bg.jpeg);
+}
 .Pairings .join {
   color: white;
   margin-top: 2vw;
@@ -524,7 +533,13 @@ header nav ul {
 }
 
 .send {
-  background-image: url(/image_processing20201201-32593-1t8f1dl.jpg);
+  background-color: #35512f;
+    background-image:
+      repeating-linear-gradient(to right, transparent 0 150px, #0001 150px 151px),
+      repeating-linear-gradient(to bottom, transparent 0 150px, #0001 150px 151px),
+      linear-gradient(to right, #35512f7e, #35512f78),
+      url(/image_processing20201201-32593-1t8f1dl.jpg);
+  
   background-size: cover;
   background-position: center;
 

@@ -5,11 +5,11 @@
     margin: 0;
     font-family: Poppins;
     color: #1E1E1E;
-    background-color: #CDCDCD;
+    /* background-color: #cdcdcd72; */
     background-image:
         repeating-linear-gradient(to right, transparent 0 150px, #0001 150px 151px),
         repeating-linear-gradient(to bottom, transparent 0 150px, #0001 150px 151px),
-        linear-gradient(to right, #CDCDCDcc, #CDCDCDcc),
+        linear-gradient(to right, #cdcdcd24, #cdcdcd30),
         url(/STARBUCKS\ mockup____bg.jpeg);
 }
 
