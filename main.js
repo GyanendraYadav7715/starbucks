@@ -8,10 +8,10 @@ import "./can.css"
 gsap.registerPlugin(ScrollTrigger);
 let Prelodertime = gsap.timeline();
 function cursor() {
-  document.addEventListener("mousemove", function (det) {
+  document.addEventListener("mousemove", function (gyan) {
     gsap.to(".cursor", {
-      x: det.x,
-      y: det.y,
+      x: gyan.x,
+      y: gyan.y,
       duration: 0.5
     });
   });
