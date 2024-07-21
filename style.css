@@ -33,17 +33,28 @@ body {
 /* Custom cursor */
 .cursor {
   position: fixed;
-  z-index: 99;
+  z-index: 98;
   border-radius: 50%;
   background-color:rgba(53, 45, 45, 0.389);
-    backdrop-filter: blur(2px);
-     
-    border: 1px solid var(--border-color);
-    box-shadow: 0 10px 40px #5555;
+  backdrop-filter: blur(2px);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 40px #5555;
   width: 3rem;
   height: 3rem;
 }
+.cursor span{
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size:1.2rem;
+
+
+}
 .preloder {
+  z-index:99;
   background: rgb(67, 45, 43);
   background: linear-gradient(90deg, rgba(67, 45, 43, 1) 0%, rgba(101, 67, 53, 1) 37%, rgba(0, 0, 0, 1) 100%);
 }
@@ -87,7 +98,7 @@ header nav a {
   color: #000;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 header nav ul {
@@ -111,7 +122,7 @@ header nav ul {
 
 #nav-part2 h6 a {
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.776);
   position: relative;

@@ -10,15 +10,81 @@ let Prelodertime = gsap.timeline();
 function cursor() {
   document.addEventListener("mousemove", function (det) {
     gsap.to(".cursor", {
-      x: det.x ,
-      y: det.y ,
+      x: det.x,
+      y: det.y,
       duration: 0.5
     });
-    
   });
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const anchors = document.querySelectorAll("a");
+    anchors.forEach((anchor) => {
+      anchor.addEventListener("mouseenter", () => {
+        gsap.to(".cursor", {
+          scale:.7,
+          border: "1px solid white",
+          duration: 0.5
+        });
+      });
+
+      anchor.addEventListener("mouseleave", () => {
+        gsap.to(".cursor", {
+          scale: 1,
+          border: "1px solid var(--border - color)",
+          duration: 0.5
+        });
+      });
+    });
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.querySelectorAll("button");
+   btn.forEach((bt) => {
+     bt.addEventListener("mouseenter", () => {
+      
+        gsap.to(".cursor", {
+          width: "5rem",
+          height: "5rem",
+          border: "1px solid white",
+          duration: 0.5
+        });
+       document.querySelector(".cursor").innerHTML = "<span>Click</span>";
+      });
+ 
+     bt.addEventListener("mouseleave", () => {
+       document.querySelector(".cursor").innerHTML = "";
+        gsap.to(".cursor", {
+          width: "3rem",
+          height: "3rem",
+          scale: 1,
+          border: "1px solid var(--border - color)",
+          duration: 0.5
+        });
+      });
+    });
+  });
+  document.querySelector(".can").addEventListener("mouseenter",()=> {
+    gsap.to(".cursor", {
+      width: "6rem",
+      height: "6rem",
+      border: "1px solid white",
+      duration: 0.5
+    });
+    document.querySelector(".cursor").innerHTML = "<span>hover</span>";
+  })
+  document.querySelector(".can").addEventListener("mouseleave",()=> {
+    document.querySelector(".cursor").innerHTML = "";
+    gsap.to(".cursor", {
+      width: "3rem",
+      height: "3rem",
+      scale: 1,
+      border: "1px solid var(--border - color)",
+      duration: 0.5
+    });
+  })
 }
+
 cursor();
+
 
 function loderanimtion() {
 
