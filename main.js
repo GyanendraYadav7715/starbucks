@@ -112,30 +112,30 @@ function loderanimtion() {
     opacity: 0,
     y: 150,
     duration: 0.5,
-    stagger: 0.15,
+    stagger: 0.07,
   });
   Prelodertime.from(".starbuck .b", {
     opacity: 0,
     y: 150,
     duration: 0.5,
-    stagger: 0.15,
+    stagger: 0.07,
   });
 
-  gsap.from(".preloder img", {
-    opacity: 0,
-    duration: 0.8,
-  });
+  // gsap.from(".preloder img", {
+  //   opacity: 0,
+  //   duration: 0.2,
+  // });
   Prelodertime.to(".starbuck .a", {
     opacity: 0,
     y: -150,
-    duration: 0.4,
-    stagger: 0.1,
+    duration: 0.2,
+    stagger: 0.09,
   });
   Prelodertime.to(".starbuck .b", {
     opacity: 0,
     y: -150,
-    duration: 0.4,
-    stagger: 0.1,
+    duration: 0.2,
+    stagger: 0.09,
   });
   Prelodertime.to(
     ".preloder .goingtoright",
@@ -282,25 +282,25 @@ function landingpage() {
   Prelodertime.from(".afterpreloader .content h2", {
 
     opacity: 0,
-    duration: 2,
+    duration:1,
 
   })
   Prelodertime.from(".afterpreloader .content p", {
     x: -50,
     opacity: 0,
-    duration: 1,
+    duration:.7,
 
   })
   Prelodertime.from(".afterpreloader article figure", {
 
     opacity: 0,
-    duration: .7,
+    duration: .5,
 
   })
   Prelodertime.from(".afterpreloader .content button", {
     y: -50,
     opacity: 0,
-    duration: 1,
+    duration:.5,
 
   })
 }
