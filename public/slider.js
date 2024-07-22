@@ -14,19 +14,19 @@ function showContent(type) {
                         <h2 class="content-heading1">Drinks</h2>
                         <div class="food-section">
                             <div class="food-item inline-block">
-                                <img src="images/6.avif" alt="Food Item 1">
+                                <img src="/6.avif" alt="Food Item 1">
                                 <p class="content-para">Ice Tea and Lemonade</p>
                             </div>
                             <div class="food-item inline-block">
-                                <img src="images/10.avif" alt="Food Item 2">
+                                <img src="/10.avif" alt="Food Item 2">
                                 <p class="content-para">Hot Coffee</p>
                             </div>
                             <div class="food-item inline-block">
-                                <img src="images/20.avif" alt="Food Item 2">
+                                <img src="/20.avif" alt="Food Item 2">
                                 <p class="content-para">Bottled Beverages</p>
                             </div>
                             <div class="food-item inline-block">
-                                <img src="images/16.avif" alt="Food Item 3">
+                                <img src="/16.avif" alt="Food Item 3">
                                 <p class="content-para">Frappuccino Blended Beverages</p>
                             </div>
                         </div>
@@ -38,19 +38,19 @@ function showContent(type) {
                         <h2 class="content-heading1">Food</h2>
                         <div class="food-section">
                             <div class="food-item inline-block">
-                                <img src="images/9.avif" alt="Food Item 1">
+                                <img src="/9.avif" alt="Food Item 1">
                                 <p class="content-para">Egg, Pesto & Mozzarella Sandwich</p>
                             </div>
                             <div class="food-item inline-block">
-                                <img src="images/12f.jpg" alt="Food Item 2">
+                                <img src="/12f.jpg" alt="Food Item 2">
                                 <p class="content-para">Plain Bagel</p>
                             </div>
                             <div class="food-item inline-block">
-                                <img src="images/19.avif" alt="Food Item 2">
+                                <img src="/19.avif" alt="Food Item 2">
                                 <p class="content-para">Rolled & Steel-Cut Oatmeal</p>
                             </div>
                             <div class="food-item inline-block">
-                                <img src="images/17.jpg" alt="Food Item 3">
+                                <img src="/17.jpg" alt="Food Item 3">
                                 <p class="content-para">Crispy Grilled Cheese on Sourdough</p>
                             </div>
                         </div>
@@ -62,19 +62,19 @@ function showContent(type) {
                         <h2 class="content-heading1">Merchandise</h2>
                         <div class="food-section">
                             <div class="food-item inline-block">
-                                <img src="images/7.avif" alt="Food Item 1">
+                                <img src="/7.avif" alt="Food Item 1">
                                 <p class="content-para">French Press</p>
                             </div>
                             <div class="food-item inline-block">
-                                <img src="images/5.jpg" alt="Food Item 2">
+                                <img src="/5.jpg" alt="Food Item 2">
                                 <p class="content-para">Glass Mug</p>
                             </div>  
                             <div class="food-item inline-block">
-                                <img src="images/4.avif" alt="Food Item 2">
+                                <img src="/4.avif" alt="Food Item 2">
                                 <p class="content-para">Green Gradient Stainless-Steel Tumbler</p>
                             </div>
                             <div class="food-item  inline-block">
-                                <img src="images/GLASS_MUG.avif" alt="Food Item 3">
+                                <img src="/GLASS_MUG.avif" alt="Food Item 3">
                                 <p class="content-para">Glass Mug</p>
                             </div>
                         </div>
