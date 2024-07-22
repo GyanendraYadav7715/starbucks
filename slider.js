@@ -88,16 +88,16 @@ function showContent(type) {
             gsap.fromTo(contentDiv, { opacity: 0 }, { opacity: 1, duration: 0.5 });
 
 
-            const images = contentDiv.querySelectorAll('.food-item img');
-            images.forEach((img, index) => {
-                gsap.from(img, {
-                    x: -50,
-                    opacity: 0,
-                    duration: 1,
-                    delay: index * 0.2,
-                    ease: 'power2.out'
-                });
-            });
+            // const images = contentDiv.querySelectorAll('.food-item img');
+            // images.forEach((img, index) => {
+            //     gsap.from(img, {
+            //         x: -50,
+            //         opacity: 0,
+            //         duration: 1,
+            //         delay: index * 0.2,
+            //         ease: 'power2.out'
+            //     });
+            // });
            
             
         }
